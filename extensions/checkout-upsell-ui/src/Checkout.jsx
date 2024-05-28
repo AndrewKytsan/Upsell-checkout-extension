@@ -28,8 +28,8 @@ function Extension() {
   const [loading, setLoading] = useState(false);
 
   const settings = useSettings();
-  // const variant_id = settings.product_variant;
-  const variant_id = 'gid://shopify/ProductVariant/48129191051448'
+  const variant_id = settings.product_variant;
+  // const variant_id = 'gid://shopify/ProductVariant/48129191051448'
   // 
   useEffect(()=> {
     async function getVariantData() {
